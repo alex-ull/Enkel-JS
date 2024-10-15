@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tall.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 24rem;
+            gap: 0.5rem;
+        }
+        p, div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 1rem;
+            border-radius: 1rem;
+            background-color: steelblue;
+            color: white;
+            height: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="wright" id="numWright" placeholder="skriv inn eit nummer">
+    <button onclick="calculate()">Regn</button>
+    <p>Tallet ditt er</p>
+    <div id="num"></div>
+    <p>Halvparten er</p>
+    <div id="ahalf"></div>
+    <p>Det dobbelte er</p>
+    <div id="adubl"></div>
+    <p>Det tredobble er</p>
+    <div id="atrpl"></div>
+    <p>Og kvadratet er</p>
+    <div id="asqur"></div>
+</body>
+</html>
