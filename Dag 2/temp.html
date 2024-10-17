@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="climate.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <select name="measure" id="measure">
+        <option value="c">Celsius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">kelvin</option>
+    </select>
+    <input type="number" id="temp" oninput="calculate()">
+    <div id="cel"></div>
+    <div id="fah"></div>
+    <div id="kel"></div>
+</body>
+</html>

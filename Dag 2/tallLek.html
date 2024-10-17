@@ -11,6 +11,12 @@
             margin: 0;
         }
         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        main {
             display: grid;
             grid-template-columns: 1fr 1fr;
             width: 24rem;
@@ -26,20 +32,41 @@
             color: white;
             height: 4rem;
         }
+        div {
+            background-color: coral;
+            width: 4rem;
+        }
+        button {
+            background-color: black;
+            color: white;
+            width: 5rem;
+            height: 4rem;
+            border-radius: 1rem;
+            border: none;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: darkgrey;
+        }
+        input {
+            border-radius: 1rem;
+        }
     </style>
 </head>
 <body>
-    <input type="number" name="wright" id="numWright" placeholder="skriv inn eit nummer">
-    <button onclick="calculate()">Regn</button>
-    <p>Tallet ditt er</p>
-    <div id="num"></div>
-    <p>Halvparten er</p>
-    <div id="ahalf"></div>
-    <p>Det dobbelte er</p>
-    <div id="adubl"></div>
-    <p>Det tredobble er</p>
-    <div id="atrpl"></div>
-    <p>Og kvadratet er</p>
-    <div id="asqur"></div>
+    <main>
+        <input type="number" name="wright" id="numWright" placeholder="skriv inn eit nummer">
+        <button onclick="calculate()">Regn</button>
+        <p>Tallet ditt er</p>
+        <div id="num"></div>
+        <p>Halvparten er</p>
+        <div id="ahalf"></div>
+        <p>Det dobbelte er</p>
+        <div id="adubl"></div>
+        <p>Det tredobble er</p>
+        <div id="atrpl"></div>
+        <p>Og kvadratet er</p>
+        <div id="asqur"></div>
+    </main>
 </body>
 </html>
