@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Home</h1></a>
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </header>
+    <div id="id01" class="modal">
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter username" name="uname" id="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+                <p id="warning"></p>
+
+                <button type="submit" onclick="verify()">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color: #f1f1f1;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <main>
+    </main>
+    <footer></footer>
+</body>
+</html>
