@@ -6,8 +6,9 @@ function verify() {
     let key = "password"
 
     if (uname == user && psw == key) {
-        alert(Something went wrong);
+        document.getElementById("warning").innerHTML = "Ops. Something went wrong!";
     }
+        
 
     else {
         document.getElementById("warning").innerHTML = "Wrong username and/or password!";
