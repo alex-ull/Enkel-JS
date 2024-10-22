@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Home</h1></a>
+    </header>
+    <main>
+        <input type="number" id="val1">
+        <select id="drop">
+            <option id="addit">+</option>
+            <option id="subta">-</option>
+            <option id="multi">*</option>
+            <option id="divit">/</option>
+        </select>
+        <input type="number" id="val2">
+        <button type="submit" onclick="sum()">=</button>
+        <p id="out"></p>
+    </main>
+    <script src="t2.js"></script>
+</body>
+</html>
