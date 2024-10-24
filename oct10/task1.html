@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Handleliste</title>
+    <style>
+        main {
+            margin: 1rem;
+        }
+        button, input {
+            padding: 0.25rem;
+        }
+        button {
+            cursor: pointer;
+        }
+        ul {
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+        }
+        li {
+            margin: 0.5rem;
+        }
+        #reset:hover {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            transform: scale(1.11);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Home</h1></a>
+    </header>
+    <main>
+        <h1>Handleliste</h1>
+        <input type="text" id="item" placeholder="Legg til vare">
+        <button type="submit" id="conf" onclick="add()">Add</button>
+        <ul id="list"></ul>
+        <button id="reset" onclick="wipe()">Reset</button>
+    </main>
+    <script src="t1.js"></script>
+</body>
+</html>

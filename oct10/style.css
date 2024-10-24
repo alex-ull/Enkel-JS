@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a h1 {
+    background-color: darkslateblue;
+    padding: 1rem;
+}
+main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: darkslateblue;
+    height: 8rem;
+    border-radius: 1rem;
+}
+main a:hover {
+    transform: scale(1.01);
+    background-color: slateblue;
+}
