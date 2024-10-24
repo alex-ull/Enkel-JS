@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Slider</title>
+    <style>
+        input {
+            cursor: pointer;
+        }
+        input:active {
+            cursor: grabbing;
+        }
+    </style>
 </head>
 <body>
     <header>
         <a href="index.html"><h1>Home</h1></a>
     </header>
+    <main id="bgc">
+        <label for="red">R</label>
+        <input type="range" id="red" min="0" max="255" value="255" oninput="cv()">
+        <p id="dspr">255</p>
+        <label for="green">G</label>
+        <input type="range" id="green" min="0" max="255" value="255" oninput="cv()">
+        <p id="dspg">255</p>
+        <label for="blue">B</label>
+        <input type="range" id="blue" min="0" max="255" value="255" oninput="cv()">
+        <p id="dspb">255</p>
+    </main>
+    <script src="t4.js"></script>
 </body>
 </html>

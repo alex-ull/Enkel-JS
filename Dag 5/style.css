@@ -3,6 +3,8 @@
     margin: 0;
 }
 header {
+    display: flex;
+    justify-content: flex-start;
     background-color: black;
     padding: 1rem;
 }
