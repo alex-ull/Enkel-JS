@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Historie</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Oct29</h1></a>
+    </header>
+    <main>
+        <h2>Historiegenerator</h2>
+        <div id="sec">
+            <div id="r1">
+                <input type="text" id="name" placeholder="Skriv et navn...">
+                <div>
+                    <select id="gender">
+                        <option value="herre">Herre</option>
+                        <option value="d">Dame</option>
+                        <option value="nurtal">Ikke binær</option>
+                        <option value="none">Ingen av valgene</option>
+                    </select>
+                    <label for="gender">Velg kjønn</label>
+                </div>
+                <input type="number" id="age" placeholder="Skriv inn alder...">
+                <button type="submit" onclick="crea()">Generer</button>
+            </div>
+            <p id="story"></p>
+        </div>
+    </main>
+    <script src="t1.js"></script>
+</body>
+</html>

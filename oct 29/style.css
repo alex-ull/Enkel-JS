@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #333;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid 2px #555;
+    padding: 1rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+main h2, label, p {
+    color: white;
+    padding-bottom: 1rem;
+}
+#sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#r1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#r1 input, #r1 select, #r1 button {
+    margin-bottom: 1rem;
+    border: #555 2px solid;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #333;
+    color: white;
+}
+#r1 select:hover, #r1 button:hover {
+    cursor: pointer;
+    background-color: #555;
+    transform: scale(1.02);
+}
+#story {
+    border-left: solid 2px #555;
+    padding: 1rem;
+}
