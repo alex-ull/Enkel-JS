@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Deffinert løkke</title>
+    <style>
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #out {
+            border-left: 2px solid #555;
+        }
+        .subout {
+            padding-left: 1rem;
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Nov07</h1></a>
+    </header>
+    <main>
+        <h2>Finn mellom verdier</h2>
+        <div class="content">
+            <div>
+                <input type="number" id="num1" placeholder="Deffiner start-tall...">
+                <input type="number" id="num2" placeholder="Deffiner slutt-tall...">
+                <button onclick="sub()">Skriv ut</button>
+            </div>
+            <div id="out"></div>
+        </div>
+    </main>
+    <script src="tA.js"></script>
+</body>
+</html>

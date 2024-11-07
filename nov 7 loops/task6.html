@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Input løkke</title>
+    <style>
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #out {
+            border-left: 2px solid #555;
+        }
+        .subout {
+            padding-left: 1rem;
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Nov07</h1></a>
+    </header>
+    <main>
+        <h2>Hvor mange ganger ønsker du å gjenta frasen?</h2>
+        <div class="content">
+            <div>
+                <input type="text" id="txt" placeholder="Skriv inn tekst...">
+                <input type="number" id="num" placeholder="Skriv inn nummer...">
+                <button onclick="sub()">Skriv ut</button>
+            </div>
+            <div id="out"></div>
+        </div>
+    </main>
+    <script src="t6.js"></script>
+</body>
+</html>
