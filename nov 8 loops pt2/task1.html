@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Summering</title>
+    <style>
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .sec {
+            border-left: 2px solid #555;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Nov08</h1></a>
+    </header>
+    <main>
+        <h2>Summering</h2>
+        <div class="content">
+            <div>
+                <button onclick="sub1()">Skriv ut standard sum</button>
+                <p id="out1"></p>
+            </div>
+            <div class="sec">
+                <button onclick="sub2()">Skriv ut partall sum</button>
+                <p id="out2"></p>
+            </div>
+        </div>
+    </main>
+    <script src="t1.js"></script>
+</body>
+</html>
