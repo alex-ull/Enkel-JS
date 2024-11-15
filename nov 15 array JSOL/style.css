@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #333;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid 2px #555;
+    padding: 1rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+main h2, label, p {
+    color: white;
+    padding-bottom: 1rem;
+}
+Button {
+    cursor: pointer;
+    border-radius: 2rem;
+    border: 2px solid white;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+}
+button:hover {
+    background-color: #555;
+    transform: scale(1.02);
+}
+input {
+    background-color: #333;
+    color: white;
+    border: #555 2px solid;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
