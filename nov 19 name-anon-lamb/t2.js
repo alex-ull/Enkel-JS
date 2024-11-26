@@ -76,6 +76,3 @@ function basic(list) {
     document.getElementById("out").innerHTML = print; 
 }
 
-function a() {
-    duck.filter(filt => {console.log(filt.etternavn == "Duck");})
-}
